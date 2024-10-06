@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1,user-scalable=no"
     />
-    <title>Online Tuner</title>
+    <title>Tune My Guitar</title>
+    <meta name="description" content="Free online guitar tuner. Tune your guitar easily with our accurate and user-friendly tool." />
+    <meta name="keywords" content="guitar tuner, online tuner, tune guitar, guitar tuning app, free guitar tuner, free online guitar tuner" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
   </head>
   <body>
     <canvas class="frequency-bars"></canvas>
