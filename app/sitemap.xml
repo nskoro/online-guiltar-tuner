@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://tune-my-guitar.com/</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Additional pages if applicable (for now, only the homepage) -->
+  <!-- Example for an About page -->
+  <!--
+  <url>
+    <loc>https://tune-my-guitar.com/about</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  -->
+
+  <!-- You can add other pages similarly if your website grows -->
+
+</urlset>
