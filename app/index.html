@@ -1,47 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,user-scalable=no"
-    />
-    <title>Tune My Guitar</title>
-    <meta name="description" content="Free online guitar tuner. Tune your guitar easily with our accurate and user-friendly tool." />
-    <meta name="keywords" content="guitar tuner, online tuner, tune guitar, guitar tuning app, free guitar tuner, free online guitar tuner" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-  </head>
-  <body>
-    <canvas class="frequency-bars"></canvas>
-    <div class="meter">
-      <div class="meter-dot"></div>
-      <div class="meter-pointer"></div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tune My Guitar" />
+  <meta property="og:description"
+    content="Free online guitar tuner. Tune your guitar easily with our accurate and user-friendly tool." />
+  <meta property="og:image" content="https://tune-my-guitar.com/android-chrome-512x512.png" />
+  <meta property="og:url" content="https://tune-my-guitar.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tune My Guitar" />
+  <meta name="twitter:description"
+    content="Free online guitar tuner. Tune your guitar easily with our accurate and user-friendly tool." />
+  <meta name="twitter:image" content="https://tune-my-guitar.com/android-chrome-512x512.png" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Tune My Guitar</title>
+  <meta name="description"
+    content="Free online guitar tuner. Tune your guitar easily with our accurate and user-friendly tool." />
+  <meta name="keywords"
+    content="guitar tuner, online tuner, tune guitar, guitar tuning app, free guitar tuner, free online guitar tuner" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQCL8NLLW0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MQCL8NLLW0');
+  </script>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tune My Guitar",
+    "url": "https://tune-my-guitar.com",
+    "description": "Free online guitar tuner tool.",
+    "applicationCategory": "MusicApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+
+
+</head>
+
+<body>
+  <canvas class="frequency-bars"></canvas>
+  <div class="meter">
+    <div class="meter-dot"></div>
+    <div class="meter-pointer"></div>
+  </div>
+  <div class="notes">
+    <div class="notes-list"></div>
+    <div class="frequency">
+      <span>Hz</span>
     </div>
-    <div class="notes">
-      <div class="notes-list"></div>
-      <div class="frequency">
-        <span>Hz</span>
-      </div>
-    </div>
-    <div class="a4">A<sub>4</sub> = <span>440</span> Hz</div>
-    <label class="auto">
-      Auto
-      <input type="checkbox" checked />
-    </label>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aubiojs@0.1.1/build/aubio.min.js"></script>
-    <script src="tuner.js"></script>
-    <script src="meter.js"></script>
-    <script src="frequency-bars.js"></script>
-    <script src="notes.js"></script>
-    <script src="app.js"></script>
-  </body>
+  </div>
+  <div class="a4">A<sub>4</sub> = <span>440</span> Hz</div>
+  <label class="auto">
+    Auto
+    <input type="checkbox" checked />
+  </label>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aubiojs@0.1.1/build/aubio.min.js"></script>
+  <script src="tuner.js"></script>
+  <script src="meter.js"></script>
+  <script src="frequency-bars.js"></script>
+  <script src="notes.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
